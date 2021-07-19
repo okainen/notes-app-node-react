@@ -1,0 +1,42 @@
+POST http://localhost:8080/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "email@email.com",
+    "password": "123456aA",
+    "username": "user",
+    "firstName": "Vitalii",
+    "lastName": "Popovych"
+}
+###
+POST http://localhost:8080/api/users/sign-in HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "email@email.com",
+    "password": "123456aA"
+}
+###
+GET http://localhost:8080/api/users/current HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhMDYxZjdkLTExNzQtNDA2NS05MzdlLTQyNjg4ZDkwMmFhNSIsImlhdCI6MTYyNjUzOTIwOSwiZXhwIjoxNjI2NTQwMTA5fQ.qH19IKzAUcc8HQkuzFUJS63BV7-kkYMh_AlUvsYhMwM
+###
+GET http://localhost:8080/api/users/sign-out HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzVmNDM0NGFlOTJkMmZiY2Q5YTI2MiIsInJvbGUiOiJBVVRIT1IiLCJpYXQiOjE2MjM1ODg2NDV9.locGyzpokCYjrzfAgIEqu9GiN2-Np-DRMKNHkSEWDNw
+
+
+
+
+
+
+###
+POST http://localhost:8080/api/users/sign-in HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "some.mail@lpnu.ua",
+    "password": "123456aA"
+}
+
+###
+GET http://localhost:8080/api/users/60c708b76c89b34ec4afe75f HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzZmNzlkMWE4MDYzMDllYzhiYjY4MCIsInJvbGUiOiJBVVRIT1IiLCJpYXQiOjE2MjQyMTI5NDYsImV4cCI6MTYyNDIxMzg0Nn0.9aD8JdfsiI6IMgsHFtwmmODOCF3OZeN5hnPm7claBoo

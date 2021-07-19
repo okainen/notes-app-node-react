@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/notes HTTP/1.1
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhMDYxZjdkLTExNzQtNDA2NS05MzdlLTQyNjg4ZDkwMmFhNSIsImlhdCI6MTYyNjQxOTA3NiwiZXhwIjoxNjI2NDE5OTc2fQ.jNEB7fbvoTZizRWHClUzCvr4Y6rpSZovnU3Tr7Es4SY
+
+{
+   "title": "Hello.",
+   "content": "Description.",
+   "category": "IDEA"
+}
+###
+PATCH http://localhost:8080/api/notes/305fc261-4e46-43cb-b07b-24a4b0a4f1f4 HTTP/1.1
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhMDYxZjdkLTExNzQtNDA2NS05MzdlLTQyNjg4ZDkwMmFhNSIsImlhdCI6MTYyNjUzODExNSwiZXhwIjoxNjI2NTM5MDE1fQ.7k7hrQTRcmwnlI_2wn9-TnFasb4yOsFi9mQPEc-AnzI
+
+{
+   "title": "Hello.",
+   "content": "Description. !2!",
+   "category": "IDEA"
+}
+###
+GET http://localhost:8080/api/notes/305fc261-4e46-43cb-b07b-24a4b0a4f1f4
+###
+GET http://localhost:8080/api/notes HTTP/1.1
+###
+GET http://localhost:8080/api/notes?fields=id,week HTTP/1.1
+###
+GET http://localhost:8080/api/notes/60c6f7ef1a806309ec8bb682 HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzcwOGI3NmM4OWIzNGVjNGFmZTc1ZiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjIzNjU4MTQ3fQ.aZ5-mleG1a05wLGVtmQY2civdnjPZsrBSmmPx2LNNIc###
+POST http://localhost:8080/api/notes/60c6f7ef1a806309ec8bb682/enrollment HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzcwOGI3NmM4OWIzNGVjNGFmZTc1ZiIsInJvbGUiOiJTVFVERU5UIiwiaWF0IjoxNjIzNjU4MTQ3fQ.aZ5-mleG1a05wLGVtmQY2civdnjPZsrBSmmPx2LNNIc
