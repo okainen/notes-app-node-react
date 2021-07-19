@@ -1,0 +1,5 @@
+node_modules
+dist
+manual-test
+static
+.env
